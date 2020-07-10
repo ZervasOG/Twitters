@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aefff6ae213c40308d7f0975ef287b38" Name="Diagram1">
+        <EntityTypeShape EntityType="TwittersDBModel.t_Comments" Width="1.5" PointX="0.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="TwittersDBModel.t_CommentVotes" Width="1.5" PointX="3.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TwittersDBModel.t_Posts" Width="1.5" PointX="3.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TwittersDBModel.t_PostVotes" Width="1.5" PointX="6.625" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TwittersDBModel.t_Users" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <AssociationConnector Association="TwittersDBModel.FK_t_Comments_t_Posts" ManuallyRouted="false" />
+        <AssociationConnector Association="TwittersDBModel.FK_t_Comments_t_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TwittersDBModel.FK_t_CommentVotes_t_Comments" ManuallyRouted="false" />
+        <AssociationConnector Association="TwittersDBModel.FK_t_CommentVotes_t_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TwittersDBModel.FK_t_Posts_t_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="TwittersDBModel.FK_t_PostVotes_t_Posts" ManuallyRouted="false" />
+        <AssociationConnector Association="TwittersDBModel.FK_t_PostVotes_t_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
